@@ -5,8 +5,9 @@ A Node.js bemutatása: https://docs.microsoft.com/hu-hu/training/modules/intro-t
 Teszt(1): 
 
 ![image](https://user-images.githubusercontent.com/79217871/190642873-8813de73-94dd-4b13-adda-2d3f884101cc.png)
+__________________________________________________________________________________________________________________
 
-Új Node.js-projekt létrehozása és a függőséket kezelése (FOLYAMATBAN): https://docs.microsoft.com/hu-hu/training/modules/create-nodejs-project-dependencies/1-introduction
+Új Node.js-projekt létrehozása és a függőséket kezelése: https://docs.microsoft.com/hu-hu/training/modules/create-nodejs-project-dependencies/1-introduction
 
 ![image](https://user-images.githubusercontent.com/79217871/190847947-2f9de0dd-b4d9-4857-b9e3-9b94f6bd35aa.png)
 
@@ -18,3 +19,5 @@ Teszt(2):
 
 
 ![image](https://user-images.githubusercontent.com/79217871/191944348-79fd78d9-7620-45c8-b67a-e68a27484fc5.png)
+__________________________________________________________________________________________________________________
+Node.js-alkalmazások interaktív hibakeresése a beépített hibakeresővel és a Visual Studio Code hibakeresőjével: https://learn.microsoft.com/hu-hu/training/modules/debug-nodejs/1-introduction
