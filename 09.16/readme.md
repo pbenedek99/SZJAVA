@@ -1,4 +1,4 @@
-https://learn.microsoft.com/hu-hu/training/paths/build-javascript-applications-nodejs/
+Tananyag: https://learn.microsoft.com/hu-hu/training/paths/build-javascript-applications-nodejs/
 
 A Node.js bemutatása: https://docs.microsoft.com/hu-hu/training/modules/intro-to-nodejs/1-introduction
 
