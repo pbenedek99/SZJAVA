@@ -25,3 +25,23 @@ Gyakorlat – Fájlok olvasása és írása:
 ![image](https://user-images.githubusercontent.com/79217871/194705199-feb0743c-ee2c-483d-80a3-eba724ec0db7.png)
 
 Webes API készítése a Node.js és az Express használatával: https://learn.microsoft.com/hu-hu/training/modules/build-web-api-nodejs-express/
+
+![image](https://user-images.githubusercontent.com/79217871/194707702-5733d4bb-f1e5-4eb6-b210-e83b071bb0aa.png)
+
+![image](https://user-images.githubusercontent.com/79217871/194707714-7938ac62-e68b-4fe1-a6af-8401eb927742.png)
+
+![image](https://user-images.githubusercontent.com/79217871/194707770-57e32ed0-9320-477f-921e-6c71f4cde701.png)
+
+Gyakorlat – Kérés életciklusának kezelése:
+
+![image](https://user-images.githubusercontent.com/79217871/194707938-da2716ad-b7cd-448e-8464-09c707b0caa9.png)
+
+Sikertelen hitelesítés:
+
+![image](https://user-images.githubusercontent.com/79217871/194708006-4c4291e2-1cc1-4c10-832f-906361d76d83.png)
+
+Sikeres hitelesítés:
+
+![image](https://user-images.githubusercontent.com/79217871/194708024-cd180bf1-1ce1-4820-a15c-d057f6b32005.png)
+
+![image](https://user-images.githubusercontent.com/79217871/194708109-8c4437b1-89d9-4114-bd3a-3ee266d61e7e.png)
