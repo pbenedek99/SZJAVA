@@ -15,3 +15,13 @@ Gyakorlat – A fájlrendszer használata:
 Gyakorlat – Útvonalak használata:
 
 ![image](https://user-images.githubusercontent.com/79217871/194704945-03d44a46-4725-42fd-9bac-6bae151ebc52.png)
+
+Gyakorlat – Fájlok és könyvtárak létrehozása:
+
+![image](https://user-images.githubusercontent.com/79217871/194705063-3f64d7eb-3412-4c2f-8267-069c4172cfc0.png)
+
+Gyakorlat – Fájlok olvasása és írása:
+
+![image](https://user-images.githubusercontent.com/79217871/194705199-feb0743c-ee2c-483d-80a3-eba724ec0db7.png)
+
+Webes API készítése a Node.js és az Express használatával: https://learn.microsoft.com/hu-hu/training/modules/build-web-api-nodejs-express/
