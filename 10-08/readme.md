@@ -26,6 +26,8 @@ Gyakorlat – Fájlok olvasása és írása:
 
 Webes API készítése a Node.js és az Express használatával: https://learn.microsoft.com/hu-hu/training/modules/build-web-api-nodejs-express/
 
+Gyakorlat – Új Express-webalkalmazás létrehozása:
+
 ![image](https://user-images.githubusercontent.com/79217871/194707702-5733d4bb-f1e5-4eb6-b210-e83b071bb0aa.png)
 
 ![image](https://user-images.githubusercontent.com/79217871/194707714-7938ac62-e68b-4fe1-a6af-8401eb927742.png)
