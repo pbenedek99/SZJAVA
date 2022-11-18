@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Thing1</title>
+</head>
+<body>
+    <div id="kesz"></div>
+    <br />
+    <br />
+    <input type="file" id="csvFile" accept=".csv" />
+    <br />
+    <br />
+    <button onclick="beolvas()">Framek beolvasása</button>
+    <br />
+    <br />
+    <button id="gomb" onclick="sendMessage()">Framek küldése</button>
+</body>
+<script>
+    const csvFile = document.getElementById("csvFile");
+    csvData = [];
+    /*for(let i = 0; i < 4096; i++){
+        csvData.push(1);
+    }*/
+
+    function beolvas(){
+        const input = csvFile.files[0];
+        const reader = new FileReader();
+        reader.onload = function (e) 
+        {
+            const text = e.target.result;
+            csvData = text.split(";");    
+        };
+        reader.readAsText(input);
+        document.getElementById('kesz').innerHTML = 'File beolvasva.';
+    }
+
+    // Create WebSocket connection.
+    const ws = new WebSocket('ws://localhost:8000');
+
+    // Connection opened
+    ws.onopen = () => {
+        console.log('Connection opened');
+    }
+
+    function sendMessage(){
+        document.getElementById("gomb").enabled = false;
+        ws.send(JSON.stringify(csvData));        
+    }
+    
+    
+</script>
+</html>
