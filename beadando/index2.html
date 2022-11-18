@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Thing2</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="640" height="640"></canvas>
+</body>
+<script>
+    // Create WebSocket connection.
+    const ws = new WebSocket('ws://localhost:8000');
+    const canvasSize = window.innerWidth / 3;
+    myCanvas.width = canvasSize;
+    myCanvas.height = canvasSize;
+    const partSize = canvasSize / 64;
+
+    const canvas=document.getElementById("myCanvas");
+    const ctx=canvas.getContext("2d");
+    ctx.fillRect(0, 0, canvasSize, canvasSize);
+    ctx.fillStyle = "black";
+
+    function megjelenit(csvData){
+        console.log(csvData);
+        for(let i=0; i<64; i++){
+            for(let j=0; j<64; j++){
+                ctx.fillRect(partSize * j, partSize * (64 - i), partSize, partSize);
+                switch(Number(csvData[i * 64 + j])){
+                    case 0:
+                        ctx.fillStyle='black';
+                        break;
+                    case 1:
+                        ctx.fillStyle='red';
+                        break;
+                    case 2:
+                        ctx.fillStyle="#FF4A4A";
+                        break;
+                    default:
+                }
+            }
+        }
+    }
+    // Connection opened
+    ws.onopen = () => {
+        console.log('Connection opened');
+    }
+    
+    ws.onmessage = (message) => {
+        try{
+            const csvData = JSON.parse(message.data); //kiveszem az üzenet lényegi részét
+            if(csvData[0].startsWith('\r\n')){
+                csvData[0] = csvData[0].substring(2);
+            }
+            megjelenit(csvData);
+        }catch(ex){
+            console.log('Error: ' + ex);
+        }
+    }
+
+</script>
+</html>
